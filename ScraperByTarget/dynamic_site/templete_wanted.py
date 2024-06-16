@@ -61,35 +61,38 @@ def scraprt_wanted(keyworld):
       "reward": reward
     }
     jobs_db.append(job)
-
-keywords = [
-  "Python",
-  "nextjs",
-  "django",
-]
-
-for keyword in keywords:
-  scraprt_wanted(keyword)
-  time.sleep(1)
-
-# 데이터를 파일로 저장하기 위해 
-file = open("output/data/jobs.csv", "w", newline="", encoding="UTF-8")
-writer = csv.writer(file)
-
-writer.writerow(
-  [
-    "Keyword",  # "keword
-    "link", 
-    "title", 
-    "company_name", 
-    "reward"
-    ]
-  ) # 헤더 작성
-
-# jobs_db.values()
-for job in jobs_db:
-  writer.writerow(list(job.values()))
-
-jobs_db.clear()
+    
+  return jobs_db
 
 
+if __name__ == "__main__":
+
+  keywords = [
+    "React",
+    # "nextjs",
+    # "django",
+  ]
+
+  for keyword in keywords:
+    scraprt_wanted(keyword)
+    time.sleep(1)
+
+  # 데이터를 파일로 저장하기 위해 
+  file = open("output/data/jobs.csv", "w", newline="", encoding="UTF-8")
+  writer = csv.writer(file)
+  writer.writerow(
+    [
+      "Keyword",  # "keword
+      "link", 
+      "title", 
+      "company_name", 
+      "reward"
+      ]
+    ) # 헤더 작성
+
+  # jobs_db.values()
+  for job in jobs_db:
+    writer.writerow(list(job.values()))
+
+  jobs_db.clear()
+  file.close()

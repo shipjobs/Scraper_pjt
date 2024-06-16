@@ -29,15 +29,24 @@
 - miniO
 - PostgreSQL
 
-활용 기술
+---
 
-* Beautifulsoup
-  * pip install Beautifulsoup
-* playerwright
+주요기술
+
+- Beautifulsoup
+  - pip install Beautifulsoup
+- playerwright
   - pip install playerwright
   - playerwright install
+
+* flask
+  - pip install flask
+
+---
 
 - ref
   - 강의 : 노마드코더
     - title: Python 으로 웹 스크래퍼 만들기
     - url: https://nomadcoders.co/python-for-beginners/lobby
+  - 팀 필수 사항
+    - requirements : 가상환경 requirements 활용 (참조: https://sosoeasy.tistory.com/597 )

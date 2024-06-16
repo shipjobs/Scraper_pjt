@@ -1,4 +1,8 @@
 {
   "python.REPL.enableREPLSmartSend": false,
-  "python.analysis.extraPaths": ["./Common"]
+  "python.analysis.extraPaths": [
+    "./Common",
+    "./ScraperByTarget/dynamic_site",
+    "./ScraperByTarget"
+  ]
 }
