@@ -5,6 +5,8 @@
 - Web 상의 국내 시골집/빈집 매물 대행 사이트에서의 데이터 크롤링
 - Web 상의 국내외 재건축 인테리어 이미지 데이터 크롤링 (학습, 디자인 생성 목적)
 
+---
+
 수집 정보
 
 - 거래 매물 정보
@@ -28,6 +30,12 @@
 - PostgreSQL
 
 활용 기술
+
+* Beautifulsoup
+  * pip install Beautifulsoup
+* playerwright
+  - pip install playerwright
+  - playerwright install
 
 - ref
   - 강의 : 노마드코더
